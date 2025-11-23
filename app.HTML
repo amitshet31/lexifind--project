@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LexiFind - AI Dictionary</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+
+    <h1>📚LexiFind</h1>
+
+    <div style="display: flex; gap: 10px; align-items: center;">
+      <input type="text" id="searchInput" placeholder="Type or speak a word..." />
+      <button id="searchBtn">Search</button>
+      <button id="micBtn" title="Speak now">🎙</button>
+    </div>
+
+    <div id="wordInfo" class="hidden">
+      <h2 id="wordTitle"></h2>
+      <p id="phonetics"></p>
+      <button id="playSound">🔊</button>
+
+      <div id="definitions"></div>
+      <div id="examples"></div>
+      <div id="relatedImages"></div>
+      <div id="synonyms"></div>
+      <div id="antonyms"></div>
+
+      <div>
+        <label for="languageSelect">Translate to:</label>
+        <select id="languageSelect">
+          <option value="">--Select--</option>
+          <option value="kn">Kannada</option>
+          <option value="hi">Hindi</option>
+          <option value="ta">Tamil</option>
+          <option value="te">Telugu</option>
+ <!----<option value="ta">Tamil</option>
+    <option value="bn">Bengali</option>
+          <option value="ml">Malayalam</option>
+          <option value="mr">Marathi</option>
+          <option value="gu">Gujarati</option>
+          <option value="pa">Punjabi</option>
+          <option value="ur">Urdu</option>>-->
+        </select>
+      </div>
+
+      <div id="translation"></div>
+    </div>
+
+    <button id="darkModeToggle">🌙 Dark Mode</button>
+
+    <h3>Search History</h3>
+    <ul id="historyList"></ul>
+    <button id="clearHistoryBtn">Clear History</button>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
